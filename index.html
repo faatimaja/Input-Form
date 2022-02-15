@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <title>Input Form</title>
+</head>
+<body id="body"> 
+    <form name="formOne" method="post">
+       <div class="form-group">
+           <label class="label-name">Name</label>
+           <input id="name" type="text" name="name">
+           <span id="error_name"></span>
+       </div>
+       <div class="form-group">
+            <label class="label-name">Surname</label>
+            <input type="text" id="surname" type="text" name="surname">
+            <span id="error_surname"></span>
+       </div>
+        <div class="form-group">
+            <label class="label-name">Date od Birth</label>
+            <input type="text" id="age" type="text" name="age">
+        </div>
+        <div class="form-group">
+            <label class="label-name">Email adress</label>
+            <input type="email" id="email" type="text" name="email">
+            <span id="error_email"></span>
+        </div>
+        <div class="form-group">
+            <label class="label-name">Gender</label>
+            Male<input type="radio"  name="gender" value="Male">
+            Female<input type="radio" name="gender" value="Female">
+        </div>
+        <div class="form-group">
+            <label class="label-name">Continent</label>
+            <select name="continent" id="continent">
+                <option value="Africa">Africa</option>
+                <option value="Asia">Asia</option>
+                <option value="Australia">Australia</option>
+                <option value="Europe">Europe</option>
+                <option value="North America">North America</option>
+                <option value="South America">South America</option>
+                <option value="Antarctica">Antarctica</option>
+            </select>
+        </div>
+        <div id ="chocolade_yesno" class="form-group">
+            <label class="label-name">Do you like chocolade?</label>
+               <label>Yes<input type="checkbox" class="chocolade" name="ckbox[]" value="yes"></label>
+               <label>No<input type="checkbox" class="chocolade" name="ckbox[]" value="no"></label>
+        </div>
+
+        <button id="getdata" onclick="getData()">Get data</button>
+
+        <input type="button" name="send" id="send" value="Send" onclick="validateData()">
+
+        <h2 id="your-data"></h2> </h2>
+        <p class="name"></p>
+        <p class="surname"></p>
+        <p class="age"></p>
+        <p class="email"></p>
+        <p class="gender"></p>
+        <p class="continent"></p>
+        <p class="chocolade"></p>
+
+    	<script type="text/javascript" src="js/script.js"></script>
+
+    </form>
+
+</body>
+</html>
